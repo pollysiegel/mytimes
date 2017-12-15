@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+}
+
+header nav {
+  display: flex;
+}
+
+logo {
+  display: flex;
+  color: MediumAquamarine;
+}
+
+nav span {
+  dispay: inline-block;
+}
+
+header {
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+}
