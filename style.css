@@ -1,18 +1,5 @@
-.container {
+.container, nav, logo {
   display: flex;
-}
-
-header nav {
-  display: flex;
-}
-
-logo {
-  display: flex;
-  color: MediumAquamarine;
-}
-
-nav span {
-  display: inline-block;
 }
 
 header {
@@ -20,3 +7,12 @@ header {
   font-size: 14px;
   font-weight: bold;
 }
+
+logo {
+  color: MediumAquamarine;
+}
+
+nav span {
+  display: inline-block;
+}
+
