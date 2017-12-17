@@ -1,22 +1,27 @@
+body {
+    margin-top: 0px;
+}
+
 header {
     display: inline-flex;
     position: fixed;
-    top: 20px;
-    left: 40px;
     font-family: Verdana;
     font-size: 14px;
     font-weight: bold;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding-bottom: 5px;
     border-bottom: solid;
     border-width: thin;
-    min-height: 60px;
-
+    min-height: 80px;
+    z-index: 1;
+    opacity: 0%;
+    background-color: white;
 }
 
 header .container {
     display: inline-flex;
+    left: 40px;
     justify-content: space-between;
     align-items: center;
     height: auto;
@@ -61,14 +66,27 @@ span {
 }
 
 main .container {
-    display: flex;
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
 }
 
 
 .column {
     display: flex;
-    border: thin;
+    border: 1px solid black;
     flex-direction: column;
+    align-items: space-between;
+    margin-top: 10px;
+}
+
+.row {
+    display: flex;
+    border: inherit;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .column.large {
@@ -84,10 +102,41 @@ main .container {
 }
 
 .item {
-    display: inherit;
-    border: thick;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid black;
+    font-family: Georgia;
+    font-size: 17px;
 }
 
-.item .heading {
-    border: thin;
+.story-heading {
+    position: relative;
+    flex-direction: column;
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    justify-content: center;
+    align-items: flex-start;
+    height: 300px;
+}
+
+
+
+.lead-story .story-heading {
+    background-image: url("./images/img-story-main.png");
+    font-size: 40px;
+}
+
+.left .second-story .story-heading {
+    background-image: url("./images/fall-season-img-story-2.png");
+}
+
+.left .third-story .story-heading {
+    background-image: url("./images/hipster-cameraman-img-story-3.png");
+}
+
+.middle .second-story .story-heading {
+    background-image: url("./images/cat-ceo-img-story-1.png");
 }
