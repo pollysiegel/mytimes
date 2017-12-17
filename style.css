@@ -113,18 +113,26 @@ main .container {
 }
 
 .story-heading {
-    position: relative;
-    flex-direction: column;
+    display: flex;
     font-family: Georgia;
     font-weight: bold;
     font-size: 30px;
     color: white;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    align-self: center;
     height: 300px;
 }
 
+.story-heading span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.story-content {
+    padding-top: 10px;
+}
 
 .lead-story .story-heading {
     background-image: url("./images/img-story-main.png");
