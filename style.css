@@ -1,4 +1,6 @@
 body {
+    display: flex;
+    flex-direction: column;
     margin-top: 0px;
 }
 
@@ -66,25 +68,22 @@ span {
 }
 
 main .container {
-    position: absolute;
-    top: 100px;
-    width: 100%;
-    display: inline-flex;
+    padding-top: 116px;
+    display: flex;
     justify-content: space-between;
+    width: 1232px;
 }
 
 
 .column {
     display: flex;
-    border: 1px solid black;
     flex-direction: column;
     align-items: space-between;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .row {
     display: flex;
-    border: inherit;
     flex-direction: row;
     justify-content: space-between;
 }
@@ -101,11 +100,14 @@ main .container {
     width: 240px;
 }
 
+.right {
+    margin:0px;
+}
+
 .item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 2px solid black;
     font-family: Georgia;
     font-size: 17px;
 }
@@ -139,4 +141,56 @@ main .container {
 
 .middle .second-story .story-heading {
     background-image: url("./images/cat-ceo-img-story-1.png");
+}
+
+.news-bites {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-bites-header {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 41px;
+    text-align: center;
+}
+
+.news-bites-item {
+    display: flex;
+    color: DimGray;
+    border-bottom: 1px solid black;
+    padding: 11px 20px;
+    background-color: WhiteSmoke;
+    font-family: Verdana;
+    font-size: 12px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: MediumAquamarine;
+    margin: auto;
+    font-family: Verdana;
+    font-size: 12px;
+    width: 100%;
+    height: 325px;
+}
+
+footer .title {
+    display: inline-block;
+    padding-right: 25px;
+    border-right: 2px solid white;
+    font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+footer nav {
+    padding-left: 25px;
+}
+footer div {
+    padding-bottom: 20px;
 }
