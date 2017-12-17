@@ -1,72 +1,93 @@
 header {
-  display: inline-flex;
-  position: fixed;
-  top: 20px;
-  left: 40px;
-  font-family: Verdana;
-  font-size: 14px;
-  font-weight: bold;
-  align-items: center;
-  width: 100%;
-  padding-bottom: 5px;
-  border-bottom: solid;
-  border-width: thin;
-  min-height: 60px;
+    display: inline-flex;
+    position: fixed;
+    top: 20px;
+    left: 40px;
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5px;
+    border-bottom: solid;
+    border-width: thin;
+    min-height: 60px;
 
 }
 
 header .container {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  height: auto;
-  width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;
 }
 
 .logo {
-  display: inline-flex;
-  align-items: center;
-  color: MediumAquamarine;
-  justify-content: space-between;
-  margin: 5px 5px;
-  min-width: 174px;
+    display: inline-flex;
+    align-items: center;
+    color: MediumAquamarine;
+    justify-content: space-between;
+    margin: 5px 5px;
+    min-width: 174px;
 }
 
 nav {
-  display: inline-flex;
-  justify-content: space-around;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 nav a {
-  color:black;
+    color:black;
 }
 
 .header-left {
-  display: inline-flex;
-  justify-content: flex-start;
-  left: 40px;
+    display: inline-flex;
+    justify-content: flex-start;
+    left: 40px;
 }
 
 .header-right {
-  display: inline-flex;
-  justify-content: flex-end;
-  margin-left: 200px;
-  min-width: 400px;
-  margin-right: 40px;
+    display: inline-flex;
+    justify-content: flex-end;
+    margin-left: 200px;
+    min-width: 400px;
+    margin-right: 40px;
 }
 
+
 span {
-  margin: 0 15px;;
+    margin: 0 15px;;
+}
+
+main .container {
+    display: flex;
+}
+
+
+.column {
+    display: flex;
+    border: thin;
+    flex-direction: column;
 }
 
 .column.large {
-  width: 630px;
+    width: 630px;
 }
 
 .column.medium {
-  width: 300px;
+    width: 300px;
 }
 
 .column.small {
-  width: 240px;
+    width: 240px;
+}
+
+.item {
+    display: inherit;
+    border: thick;
+}
+
+.item .heading {
+    border: thin;
 }
